@@ -7,4 +7,4 @@ RUN  mkdir -p /usr/www/html  && mkdir -p /root/caddy && echo "<h1>Hello,World!</
 
 EXPOSE 80 443
 
-CMD  ["/usr/local/bin/caddy","-conf","/root/caddy/Caddyfile"]
+CMD  ["/usr/local/bin/caddy","-conf","/root/caddy/Caddyfile","-agree=true"]
